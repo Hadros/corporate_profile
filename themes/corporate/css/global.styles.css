@@ -416,6 +416,7 @@ label {
   color: #606060;
   border: 1px solid #a6a6a6;
   border-radius: 3px;
+  text-decoration: none;
 }
 #page .item-list .pager .pager-current,
 #page .view-portfolio-terms a.active,
@@ -550,7 +551,7 @@ input[type="submit"],
 .view-dignities .view-footer a:hover,
 .view-our-amazing-team .views-field-nothing a:hover,
 .porfolio-image-content-link a:hover,
-.view-portfolio-terms .views-field-name a:hover {
+.view-portfolio-terms a:hover {
   text-decoration: none;
 }
 .btn + .btn,
@@ -686,10 +687,32 @@ ul.primary {
 #comments .form-textarea {
   width: 100%;
 }
+#primary-menu-bar,
+#menu-bar,
+#primary-menu-bar .menu,
+#menu-bar .menu {
+  background: #fff;
+}
+#primary-menu-bar .menu .menu,
+#menu-bar .menu  .menu {
+  display: none;
+}
+#primary-menu-bar .menu .menu .menu,
+#menu-bar .menu .menu .menu {
+  left: 100%;
+  top: 0;
+}
+#primary-menu-bar li:hover > .menu,
+#menu-bar li:hover > .menu {
+  display: block;
+}
 #primary-menu-bar nav > .menu,
 #menu-bar nav > .menu {
   float: right;
   margin: 0;
+}
+#page #menu-bar {
+  z-index: 101;
 }
 #primary-menu-bar > nav > .menu > li,
 #menu-bar .menu-depth-1 {
@@ -718,7 +741,6 @@ ul.primary {
   position: absolute;
   padding: 10px 0 !important;
   width: auto !important;
-  right: 0 !important;
   background: #fff;
   top: 80px;
   min-width: 190px;
@@ -1070,6 +1092,13 @@ ul.primary {
 
 .block-our-amazing-team-block {
   padding: 60px 0 85px;
+}
+.section-about-us .view-our-amazing-team .view-header {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .view-our-amazing-team .views-row {
   width: 28.3333%;

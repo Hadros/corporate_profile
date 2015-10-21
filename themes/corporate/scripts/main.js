@@ -8,6 +8,7 @@
         afterMove: mainSliderAMove, 
         addClassActive: true
       };
+      console.log(settings.owlcarousel);
       for (var carousel in settings.owlcarousel) {
         if (carousel == 'owl-carousel-page') {
           $.extend(true, settings.owlcarousel[carousel].settings, callbacks);
@@ -106,7 +107,7 @@
   };
 
   $( document ).ready(function() {
-    if (window.location.pathname == '/portfolio') {
+    if (window.location.pathname == '/corporate/portfolio') {
       $('.view-portfolio-terms .view-header a').addClass('active');
     }
     else {

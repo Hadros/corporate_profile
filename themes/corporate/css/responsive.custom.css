@@ -104,6 +104,18 @@
     float: none;
     margin: 0;
   }
+  #primary-menu-bar .menu .menu, 
+  #menu-bar .menu .menu {
+    display: block;
+    position: static;
+    box-shadow: none;
+    border-left: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  #primary-menu-bar .menu .menu .menu, 
+  #menu-bar .menu .menu .menu {
+    border-bottom: none;
+  }
   #primary-menu-bar > nav > .menu > li,
   #menu-bar .menu-depth-1 {
     float: none;

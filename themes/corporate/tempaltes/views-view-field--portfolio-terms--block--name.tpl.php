@@ -31,7 +31,7 @@
         $active = ' class="active" ';
       } 
     }
-    print "<a href=/portfolio/" . arg(1) . "/$row->tid $active>$row->taxonomy_term_data_name</a>";
+    print "<a href=/corporate/portfolio/" . arg(1) . "/$row->tid $active>$row->taxonomy_term_data_name</a>";
   }
   else {
     $active = "";
@@ -40,6 +40,6 @@
         $active = ' class="active" ';
       } 
     }
-    print "<a href=/portfolio/$row->tid $active>$row->taxonomy_term_data_name</a>";  
+    print "<a href=/corporate/portfolio/$row->tid $active>$row->taxonomy_term_data_name</a>";  
   }
  ?>
